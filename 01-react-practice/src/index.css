@@ -12,3 +12,45 @@ html,body{
   background-color: black;
   color: white;
 }
+
+.div{
+ /* display: grid;
+ grid-template-columns: repeat(4, 1fr);  */
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.miya{
+  width: 300px;
+  background-color: rgba(119, 36, 36, 0.294);
+  margin: 10px;
+  padding: 10px ;
+  border: 2px solid rgba(255, 0, 0, 0.368);
+  border-radius: 10px;
+  text-align: center;
+
+}
+
+.miya img{
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.miya p {
+     margin: 20px 0;
+}
+
+
+ .miya button{
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: rgba(237, 3, 3, 0.712);
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-weight: 700;
+
+
+ }
