@@ -1,27 +1,29 @@
 import React from 'react'
 import {User} from 'lucide-react'
-const Card = () => {
+const Card = (props) => {
   return (
     <div className="card">
          <div className='top'>
-        <h3>available</h3>
-        <h2>$40/hr</h2>
+        <h3 className={props.status === "busy" ? "busy" : "available"}>{props.status}</h3>
+        <h2> ${props.ratePerHour}/hr</h2>
       </div>
       <div className="ceter">
-        <img src="https://media.istockphoto.com/id/1476203627/photo/portrait-of-a-sensual-young-woman-with-long-black-hair-on-white-background.jpg?s=612x612&w=is&k=20&c=87muRhu2fHNJZLQ3hHgZk3mN60T-DGbG4966ojO18KQ=" alt="" />
-        <h1>Svetlana Anyukova</h1>
-        <h4>Mobile designer</h4>
-        <button> <User /> Freelancer</button>
+        <img src= {props.img} alt="" />
+        <h1>{props.name}</h1>
+        <h4>{props.profession} </h4>
+        <button> <User /> {props.type}</button>
       </div>
       <div className="bottom">
         <div className='h2'>
-          <h4>pppppp</h4>
-          <h4>pppppp</h4>
-          <h4>pppppp</h4>
-          <h4>+2</h4>
+           {props.skills.slice(0, 3).map((skill, index) => (
+           <h4 key={index}>{skill}</h4>
+             ))}
+         {props.skills.length > 3 && (
+         <h4>+{props.skills.length - 3}</h4>
+               )}
         </div>
         <div>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio nihil dolores sed a sapiente aliquam.</p>
+          <p>{props.description}</p>
         </div>
         <div className='line'>
         </div>
