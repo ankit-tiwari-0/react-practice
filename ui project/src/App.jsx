@@ -1,11 +1,12 @@
 import React from 'react'
+import Section1 from './component/section 1/Section1'
+import Section2 from './component/section2/section2'
 
 const App = () => {
   return (
     <div>
-       <h1 class="text-3xl font-bold underline bg-amber-800">
-    Hello world!
-  </h1>
+       <Section1 />
+       <Section2 />
     </div>
   )
 }
