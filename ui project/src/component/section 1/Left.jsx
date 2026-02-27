@@ -16,7 +16,7 @@ const Left = () => {
           segmentation
         </h3>
 
-        <p className='text-base md:text-lg lg:text-xl text-gray-600'>
+        <p className=' w-[90%] text-base md:text-lg lg:text-xl text-gray-600'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Porro dolor esse est saepe id provident doloribus atque explicabo illum.
         </p>
