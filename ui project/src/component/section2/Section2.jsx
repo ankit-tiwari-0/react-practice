@@ -3,7 +3,7 @@ import Navv from './Navv'
 import Containt from './containt'
 const Section2 = () => {
   return (
-    <div className='h-screen w-full bg-green-300'>
+    <div className='h-screen w-full '>
         <Navv />
       <Containt />
     </div>
