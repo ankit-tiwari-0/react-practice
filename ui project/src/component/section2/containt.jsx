@@ -4,7 +4,7 @@ import Right from './right'
 
 const Containt = () => {
   return (
-    <div className='pb-20 pt-6 flex gap-6 justify-between items-center h-full  px-16 '>
+    <div className='pb-20 pt-6 flex gap-6 justify-between items-center h-full  px-16 shadow-2xs shadow-amber-400 '>
       
       <Left />
       <Right />

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Leftcard = ({ bgColor, textColor, percent, description }) => {
   return (
-      <div className={`relative w-1/3 max-w-xs p-2 h-50 rounded-3xl flex  ${bgColor} ${textColor} overflow-hidden`}>
+      <div className={`relative w-1/3 max-w-xs p-2 h-50 rounded-3xl flex  ${bgColor} ${textColor}  overflow-hidden`}>
 
       {/* White Cut Shape */}
       <div className="absolute -top-6 -right-6 w-22 h-22 bg-gray-100 rounded-full "></div>
