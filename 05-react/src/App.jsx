@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Reacts from './react'
 
 const App = () => {
 
@@ -25,6 +26,8 @@ const App = () => {
       <h1>{arry}</h1>
       <button onClick={btnclick}>click</button>
       {/* <button onClick={clickch}>Click</button> object*/}
+    
+      < Reacts />
     </div>
   )
 }
