@@ -57,7 +57,7 @@ const App = () => {
       </form>
       <div className='lg:w-1/2 lg:border-l-2 h-full p-10 '>
         <h1 className='text-3xl lg:text-5xl pb-10 font-bold'>Recent Notes</h1>
-        <div className='flex flex-wrap gap-5 mt-5 h-full overflow-auto'>
+        <div id='right' className='flex flex-wrap gap-5 mt-5 h-full overflow-auto '>
             
             {task.map(function(ele ,idx) {
 
