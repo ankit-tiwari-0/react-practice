@@ -61,10 +61,10 @@ const App = () => {
             
             {task.map(function(ele ,idx) {
 
-              return  <div key={idx} className='flex justify-between flex-col items-start relative h-60 w-40 rounded-2xl text-black py-9 px-4 bg-cover bg-[url("https://i.pinimg.com/1200x/b4/bb/a0/b4bba038ba66cda4cd584ca79991c883.jpg")] '>
+              return  <div key={idx} className='flex justify-between flex-col items-start relative h-60 w-40 rounded-2xl text-black py-3 px-4 bg-[url("https://i.pinimg.com/1200x/17/ca/fc/17cafcdcc33ae085d4b5bad69149df7f.jpg")] bg-cover bg-center'>
                 <div className='w-full overflow-hidden'>
-                  <h3 className='leading-tight text-l font-bold break-all line-clamp-2'>{ele.title}</h3>
-                <p className=' mt-3 leading-tight text-sm font-medium text-gray-500 break-all line-clamp-5'>{ele.detail}</p>
+                  <h3 className='leading-tight  text-2xl font-bold break-all line-clamp-2'>{ele.title}</h3>
+                <p className=' mt-3 leading-tight text-sm font-medium text-gray-500 break-all line-clamp-7'>{ele.detail}</p>
                 </div>
                 <button onClick={() => {
                   deletenote(idx)
