@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Useeffect2 from './Useeffect2'
 
 const App = () => {
     const [num, setnum] = useState(0)
@@ -18,7 +19,6 @@ const App = () => {
      onMouseLeave={()=>{
         setnu2(nu2+100)
      }}>Click</button>
-
     </div>
   )
 }
