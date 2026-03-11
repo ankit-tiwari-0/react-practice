@@ -19,7 +19,7 @@ const App = () => {
      onMouseLeave={()=>{
         setnu2(nu2+100)
      }}>Click</button>
-    </div>
+        </div> 
   )
 }
 
