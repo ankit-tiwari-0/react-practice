@@ -32,9 +32,9 @@ if(data.length>0){
 
 }
   return (
-    <div className='bg-black overflow-auto h-screen text-white p-8 '>
+    <div id='right' className='bg-black  overflow-auto h-screen text-white p-5 pb-3.5 '>
          <Navbar />
-         <div className='flex flex-wrap  justify-center gap-4 p-2'>
+         <div className='flex flex-wrap  justify-center gap-4 p-2 mt-3.5'>
            {
             printdata
            }

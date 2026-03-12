@@ -3,3 +3,7 @@
 body {
   background: black;
 }
+
+#right::-webkit-scrollbar{
+    display: none;
+}
