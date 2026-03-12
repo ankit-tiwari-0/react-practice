@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import Navbar from './Nav'
 
 const App = () => {
   const [data, setdata] = useState([])
@@ -31,7 +32,8 @@ if(data.length>0){
 
 }
   return (
-    <div className='bg-black overflow-auto h-screen text-white '>
+    <div className='bg-black overflow-auto h-screen text-white p-8 '>
+         <Navbar />
          <div className='flex flex-wrap  justify-center gap-4 p-2'>
            {
             printdata
@@ -44,7 +46,7 @@ if(data.length>0){
             setdata([])
            }
           }} className='bg-amber-300 hover:bg-red-400 text-sm cursor-pointer active:scale-150  px-4 py-2 font-semibold rounded-xl '>Prev</button>
-          <h1 className='font-bold text-xl text-amber-100'>{index}</h1>
+          <h1 className='font-bold text-xl text-amber-100'>Pafe {index}</h1>
           <button onClick={()=>{
            setindex(index+1)
            setdata([])
