@@ -9,3 +9,27 @@ html,body{
   color: white;
   padding: 15px;
 }
+
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 40px;
+}
+
+.nav div{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  color: white;
+}
+
+.nav h1, a{
+  text-decoration: none;
+  color: white;   /* change to any color you want */
+  font-size: 30px;
+}
+
+.nav h1:hover, a:hover{
+  color: #00ffff;  /* hover effect (optional) */
+}
