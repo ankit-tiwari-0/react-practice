@@ -5,6 +5,7 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Nav from './compo/Nav'
 import Footer from './compo/Footer'
+import NotFound from './pages/NotFound'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
     </div>
   )
