@@ -9,6 +9,7 @@ import NotFound from './pages/NotFound'
 import Men from './pages/Men'
 import Women from './pages/Women'
 import Cources from './pages/Cources'
+import Courcesdetail from './pages/Courcesdetail'
 
 const App = () => {
   return (
@@ -19,6 +20,8 @@ const App = () => {
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/cource' element={<Cources />}/>
+        <Route path='/cource/:id' element={<Courcesdetail />} />
+
         <Route path='/contact' element={<Contact />}>
             <Route path='men' element={<Men />} />
             <Route path='women' element={<Women />} />
