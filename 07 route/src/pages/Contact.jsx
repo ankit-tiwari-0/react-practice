@@ -1,9 +1,15 @@
 import React from 'react'
+import { Link, Outlet } from 'react-router-dom'
 
 const Contact = () => {
   return (
-    <div className='flex m-50 justify-center'>
-      <h1 className='text-white font-bold'>Contact-Page</h1>
+    <div >
+      <div className='flex gap-8 py-5 justify-center'>
+        <Link to='/contact/men'>Men</Link>
+        <Link to='/contact/women'>Women</Link>
+      </div>
+         <Outlet />
+      
     </div>
   )
 }
