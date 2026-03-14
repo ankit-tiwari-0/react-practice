@@ -18,7 +18,7 @@ const Log = () => {
       value={username} onChange={(e) =>setusername(e.target.value)}
       placeholder='Username' />
       <input type="text"
-      value={password} onChange={() => setpassword(e.target.value)} 
+      value={password} onChange={(e) => setpassword(e.target.value)} 
        placeholder='password' />
       <button onClick={handlesubmit}>Submit</button>
 
